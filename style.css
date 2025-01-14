@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: rgb(235, 235, 235);
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.header1, .header2 {
+    display: flex;
+    align-items: center;
+}
+
+.header1 a, .header2 a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: #1f2937;
+    padding: 20px;
+}
+
+.text {
+    width: 60%;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+.pic {
+    width: 30%;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.project {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-top: 40px;
+}
+
+.project1, .project2, .project3 {
+    padding-top: 5px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #2d3748;
+    height: 400px;
+    width: 300px;
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 14px;
+}
