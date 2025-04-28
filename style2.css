@@ -1,0 +1,122 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    animation: slideDown 1s ease-in-out;
+  }
+  
+  .navbar h1 {
+    font-size: 24px;
+    padding: 20px;
+  }
+  
+  .header1 a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .header1 a:hover {
+    color: #63b3ed;
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+  
+  /* About Section */
+  .aboutme {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1f2937;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    animation: fadeInUp 1.2s ease forwards;
+  }
+  
+  .aboutme h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f7fafc;
+  }
+  
+  .aboutme iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Q&A Section */
+  .aboutme ul {
+    margin-top: 30px;
+    list-style-type: disc;
+    padding-left: 20px;
+    animation: fadeInUp 1.5s ease;
+  }
+  
+  .aboutme li {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
