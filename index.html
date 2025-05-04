@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <div class="navcontainer">
-      <div class="navbar"><h1>PORTFOLIO</h1></div>
-      <div class="header-links">
-        <a href="https://github.com/Priyanshuuk">GITHUB</a>
-        <a href="https://www.linkedin.com/in/priyanshu-khulbe-894902276/">LINKEDIN</a>
-        <a href="video.html">VIDEO</a>
-        <a href="resume.pdf" download>RESUME</a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyanshu Khulbe | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/1060d4a462.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="img/me2.jpg" alt="Priyanshu Khulbe" class="profile-pic"/>
+    <h1>Priyanshu Khulbe</h1>
+    <p>Developer • Problem Solver • Tech Enthusiast</p>
+  </section>
+
+  <!-- About Me -->
+  <section class="aboutme" id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Priyanshu Khulbe, a passionate developer focused on creating useful software that solves real-world problems. Whether it's automation, web development, or Python scripting, I enjoy crafting tech that makes life simpler.</p>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><img src="img/html.png" alt="HTML"/><span>HTML</span></div>
+      <div><img src="img/css.png" alt="CSS"/><span>CSS</span></div>
+      <div><img src="img/js.png" alt="JavaScript"/><span>JavaScript</span></div>
+      <div><img src="img/py.png" alt="Python"/><span>Python</span></div>
+      <div><img src="img/java.png" alt="Java"/><span>Java</span></div>
+      <div><img src="img/c.png" alt="C"/><span>C</span></div>
+      <div><img src="img/cpp.png" alt="C++"/><span>C++</span></div>
+      <div><img src="img/NODE.png" alt="NodeJS"/><span>Node.js</span></div>
     </div>
+  </section>
 
-    <!-- About Me Section -->
-    <div class="aboutme">
-      <div class="text">
-      <h2>ABOUT ME</h2>
-      <p>
-        Hi, I'm Priyanshu Khulbe. I'm a developer who enjoys building useful
-        applications that solve real problems. I like working with different programming 
-        tools and technologies, and I’m passionate about creating things that can make life
-        easier for people. 
-      </p>
-      <br />
-      <p><h2>Skills :</h2></p>
-      <ul>
-        <li>Web Development: I know how to create websites using HTML, CSS, and JavaScript.
-         I built a simple website called "The Odin Recipes" where people can look up recipes for foods like Pizza, Burgers, 
-         and Noodles.I made sure it’s easy to use and interactive for a better experience.</li>
-        <br />
-        <li>Automation: I’ve worked on projects where I automated tasks to make processes more efficient.
-         For example, I built a system that automatically marks attendance based on facial recognition.
-          This system reduces manual work and makes attendance tracking quicker and more accurate.</li>
-        <br />
-        <li>Python Programming: I write Python scripts for different tasks, like processing data and working with images. For example, I 
-        used Python to build the face recognition system mentioned above, and I also used it for other projects involving data manipulation.</li>
-      </ul>
-      </div>
-
-      <div class="pic">
-      <img src="./img/me2.jpg" alt="Priyanshu Khulbe" />
-      </div>
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Face Recognition Attendance System</h3>
+      <img src="img/face.png" alt="Face Recognition"/>
+      <p>Using OpenCV and Python, this project automates attendance marking with real-time facial recognition and Excel logging.</p>
+      <a href="https://github.com/Priyanshuuk/face-recognisation" target="_blank">View on GitHub</a>
     </div>
+    <div class="project">
+      <h3>The Odin Recipes</h3>
+      <img src="img/odin.png" alt="Odin Recipes"/>
+      <p>A clean and simple HTML/CSS site for browsing food recipes like Pizza, Burger, and Noodles.</p>
+      <a href="https://priyanshuuk.github.io/odin_recipes/" target="_blank">Visit Site</a>
+    </div>
+    <div class="project">
+      <h3>Rock Paper Scissors (Python)</h3>
+      <img src="img/rps.png" alt="Rock Paper Scissors"/>
+      <p>Console-based game in Python with randomized choices and score tracking.</p>
+      <a href="https://github.com/Priyanshuuk/Rock-_paper_scissor" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Weather Webpage</h3>
+      <img src="img/weather.png" alt="Weather App"/>
+      <p>Displays live weather data from any location using OpenWeather API and JavaScript.</p>
+      <a href="https://priyanshuuk.github.io/weather-webpage/" target="_blank">Visit Site</a>
+    </div>
+  </section>
 
-   
+  <!-- Videos -->
+  <section class="videos" id="videos">
+    <h2>Introductory Videos</h2>
+    <video controls>
+      <source src="vid/intro.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    <video controls>
+      <source src="vid/why .mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    <video controls>
+      <source src="vid/describe.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    
+  </section>
 
-    <!-- Projects Section -->
-    <!-- Projects Section -->
-<div class="project">
-  <!-- Face Recognition Project -->
-  <div class="project1">
-    <h2>Project 1: Face Recognition</h2>
-    <hr />
-    <p class="des">A real-time face recognition system using OpenCV, where the model recognizes faces and automatically marks attendance for users. I utilized machine learning for training the face recognition model and integrated attendance logging into an Excel sheet for easy tracking.</p>
-    <br>
-    <img src="./img/face.png" alt="Face Recognition" />
-    <br><br>
-    <a href="https://github.com/Priyanshuuk/face-recognisation">View on GitHub</a>
-  </div>
+  <!-- Footer -->
+  <footer id="contact">
+    <h3>Connect with Me</h3>
+    <div class="social-icons">
+      <a href="https://github.com/Priyanshuuk" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/priyanshu-khulbe-894902276/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:your_email@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
 
-  <!-- The Odin Recipes Project -->
-  <div class="project2">
-    <h2>Project 2: THE ODIN RECIPES</h2>
-    <hr />
-    <p class="des">A simple but effective recipe website where users can learn about different food items, such as Pizza, Burger, and Noodles. I created an easy-to-navigate interface with HTML and CSS, and users can explore recipes and details for each dish.</p>
-    <br>
-    <img src="./img/odin.png" alt="The Odin Recipes" />
-    <br><br>
-    <a href="https://priyanshuuk.github.io/odin_recipes/">Visit The Odin Recipes</a>
-  </div>
-
-  <!-- Rock Paper Scissors Project -->
-  <div class="project3">
-    <h2>Project 3: Rock Paper Scissors</h2>
-    <hr />
-    <p class="des">A fun console game implemented in Python, where users play against a computer. The game logic is based on random choices for the computer, and I used Python functions for game analysis and result display.</p>
-    <br>
-    <img src="./img/rps.png" alt="Rock Paper Scissors Game" />
-    <br><br>
-    <a href="https://github.com/Priyanshuuk/Rock-_paper_scissor">View on GitHub</a>
-  </div>
-
-  <!-- Weather Webpage Project -->
-  <div class="project4">
-    <h2>Project 4: Weather Webpage</h2>
-    <hr />
-    <p class="des">A webpage that allows users to get weather information for any place in the world. Using JavaScript and the OpenWeather API, I created a simple interface where users can input a location and receive live weather data such as temperature, humidity, and weather description.</p>
-    <br>
-    <img src="./img/weather.png" alt="Weather Webpage" />
-    <br><br>
-    <a href="https://priyanshuuk.github.io/Weather-App/">Visit Weather Webpage</a>
-  </div>
-</div>
-
-  </body>
+</body>
 </html>
